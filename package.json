@@ -6,6 +6,8 @@
     "type": "git",
     "url": "http://artlenk.ru"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sourcemaps": "^1.5.0",
@@ -31,6 +33,7 @@
   },
   "devDependencies": {
     "gulp-cssmin": "^0.2.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-x-includer": "^0.1.2"
   }
 }

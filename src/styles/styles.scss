@@ -8,3 +8,61 @@
 @import "common/btn";
 @import "common/form";
 /* blocks */
+
+$pink: #ff7cb0;
+$black: #111;
+
+.header-page {
+}
+
+.header-panel {
+  border-bottom: 1px solid $black;
+  background-color: $pink;
+  .row {
+    height: 40px;
+  }
+}
+
+.socials {
+  padding-top: 1px;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  svg {
+    fill: #fff;
+    transition: fill 0.3s ease;
+  }
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  a:hover svg {
+    fill: $black;
+  }
+  .icon-vk {
+    width: 35px;
+    height: 35px;
+  }
+  .icon-fb {
+    width: 32px;
+    height: 32px;
+  }
+  .icon-ig {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.free-shipping {
+  text-align: right;
+  color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  svg {
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+    fill: #fff;
+  }
+}
