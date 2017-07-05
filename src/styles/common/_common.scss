@@ -1,0 +1,212 @@
+@import "variables";
+@import "mixin";
+
+html,
+body {
+  background: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  @include GeometriaMedium;
+}
+
+a, .as-link {
+  color: #0086c9;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  @include transition(all, ease);
+  &:hover {
+    color: #4f8ad9;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.as-link {
+  cursor: pointer;
+}
+
+b, strong {
+  @include GeometriaBold;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.text {
+  &-center {
+    text-align: center
+  }
+  &-left {
+    text-align: left
+  }
+  &-right {
+    text-align: right
+  }
+  &-justify {
+    text-align: justify
+  }
+  &-bold {
+    @include GeometriaBold;
+  }
+  &-nowrap {
+    white-space: nowrap;
+  }
+  &-lowercase {
+    text-transform: lowercase;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-capitalize {
+    text-transform: capitalize;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.list {
+  &-unstyled {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  &-tick {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    li {
+      padding-left: 30px;
+      margin-bottom: 10px;
+      position: relative;
+      &::before {
+        width: 25px;
+        height: 22px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        background: url(../img/spritesheet.png) 0px -33px no-repeat;
+      }
+    }
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+button, input, select, textarea {
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  max-width: 1600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+.bg-color-full {
+  position: relative;
+  &::after, &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 150rem;
+    top: 0;
+    background-color: inherit;
+  }
+  &::before {
+    left: 100%;
+  }
+  &::after {
+    right: 100%;
+  }
+}
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  &-fb {
+    @include stitches-sprite(-5px, -5px, 14px, 24px);
+  }
+
+  &-tw {
+    @include stitches-sprite(-29px, -31px, 24px, 18px);
+  }
+
+  &-vk {
+    @include stitches-sprite(-63px, -5px, 31px, 18px);
+  }
+
+  &-yt {
+    @include stitches-sprite(-63px, -33px, 24px, 16px);
+  }
+}
+
+.text-blue-light {
+  color: #737f9d;
+}
+
+.page-block {
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 10px;
+  }
+}
+
+.block-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  a {
+    border-bottom: none;
+  }
+}
+
+.block-text {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.8;
+}

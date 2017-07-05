@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixin";
+
+.btn {
+  border: 0;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-block;
+  @include transition(all, ease);
+
+  &-blue {
+    padding: 21px 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 7px 20px 0 rgba(0, 135, 188, 0.6);
+    background: rgb(38, 152, 240);
+    background: -moz-linear-gradient(left, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
+    background: linear-gradient(to right, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2698f0', endColorstr='#2698f0', GradientType=1);
+    &:hover, &:active, &:focus {
+      box-shadow: none;
+    }
+  }
+  &-blue-light {
+    padding: 19px 28px 16px;
+    background-color: #52b5f9;
+    color: #fff;
+    border-radius: 26px;
+  }
+}
