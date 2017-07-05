@@ -1,16 +1,15 @@
 {
-  "name": "yes",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "Artlenk.ru",
+  "version": "1.0.1",
+  "description": "for html+js+css apps",
+  "repository": {
+    "type": "git",
+    "url": "http://artlenk.ru"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.18.8",
+  "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.5.0",
+    "browser-sync": "^2.18.8",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cheerio": "^0.6.2",
     "gulp-imagemin": "^3.2.0",
@@ -29,5 +28,9 @@
     "path": "^0.12.7",
     "rimraf": "^2.6.1",
     "svg-sprite-loader": "0.0.28"
+  },
+  "devDependencies": {
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2"
   }
 }
