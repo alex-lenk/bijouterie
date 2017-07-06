@@ -1,0 +1,126 @@
+.header-page .btn-light {
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.header-content .row {
+    height: 160px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    margin-top: 20px;
+}
+
+.phones {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+}
+
+.phone-num {
+    color: #333;
+    @include font-size(21px);
+    &:last-of-type {
+        margin-left: auto;
+    }
+}
+
+.phone-hint {
+    width: 170px;
+    height: 60px;
+    border-radius: 170px/60px;
+    @include font-size(14px);
+    color: #ff7cb0;
+    background-color: #111;
+    text-align: center;
+    position: absolute;
+    top: -76px;
+    left: 0;
+    padding-top: 13px;
+    line-height: 1.4;
+    &:last-of-type {
+        left: auto;
+        right: 0;
+    }
+    &::after {
+        width: 42px;
+        height: 14px;
+        bottom: -13px;
+        left: 28%;
+        position: absolute;
+        background: url(../img/phone-hint.png) no-repeat center;
+        content: '';
+    }
+}
+
+.header-search {
+    position: relative;
+    overflow: hidden;
+    .ui-field {
+        width: 100%;
+        height: 40px;
+        border: 1px solid $black;
+        padding-left: 20px;
+        border-radius: 4px;
+        @include font-size(18px);
+        font-weight: normal;
+    }
+}
+
+.header-search-button {
+    position: absolute;
+    right: -4px;
+    top: 0;
+    z-index: 5;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    .icon-search {
+        width: 36px;
+        height: 36px;
+        transition: stroke 0.3s ease;
+        stroke: #333;
+    }
+    &:hover .icon-search {
+        stroke: $pink;
+    }
+}
+
+.header-info {
+    margin-left: auto;
+}
+
+.basket-info {
+    display: flex;
+    align-items: center;
+}
+
+.basket {
+    display: inline-flex;
+    align-items: center;
+    .icon-basket {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+}
+
+.basket-total {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    .icon-rub {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        bottom: -2px;
+        fill: $black;
+    }
+}

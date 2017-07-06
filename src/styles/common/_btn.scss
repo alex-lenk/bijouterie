@@ -9,27 +9,56 @@
   line-height: 1;
   display: inline-block;
   @include transition(all, ease);
-
-  &-blue {
-    padding: 21px 30px;
-    font-size: 15px;
-    border-radius: 30px;
-    color: #fff;
+  
+  &-light {
+    width: 100%;
+    border-radius: 4px;
     text-transform: uppercase;
-    box-shadow: 0 7px 20px 0 rgba(0, 135, 188, 0.6);
-    background: rgb(38, 152, 240);
-    background: -moz-linear-gradient(left, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
-    background: linear-gradient(to right, rgba(38, 152, 240, 1) 0%, rgba(38, 152, 240, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2698f0', endColorstr='#2698f0', GradientType=1);
+    letter-spacing: 1px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25), 0 0 3px 0 rgba(17, 17, 17, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 0;
+      top: 50%;
+      left: 50%;
+      background: $pink;
+      opacity: 0;
+      transition: all 0.5s;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+    span {
+      position: relative;
+      z-index: 4;
+    }
+    .icon-call {
+      width: 36px;
+      height: 36px;
+      margin-right: 15px;
+      stroke: $pink;
+      position: relative;
+      z-index: 5;
+      transition: all 0.5s;
+    }
     &:hover, &:active, &:focus {
-      box-shadow: none;
+      color: #fff;
+      &::after {
+        height: 250px;
+        opacity: 1;
+      }
+      .icon-call {
+        stroke: #fff;
+      }
     }
   }
-  &-blue-light {
-    padding: 19px 28px 16px;
-    background-color: #52b5f9;
-    color: #fff;
-    border-radius: 26px;
-  }
+  
 }

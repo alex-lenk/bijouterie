@@ -4,6 +4,5 @@ node_modules/
 sources/
 bijouterie.iml
 build
-old/
 .DS_Store
 Would skip repository frontend/
