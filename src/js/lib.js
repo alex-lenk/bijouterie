@@ -1,4 +1,4 @@
-//= ../../bower_components/jquery/dist/jquery.min.js
+//= lib/slider.js
 
 // = ../../bower_components/slick-carousel/slick/slick.js
 

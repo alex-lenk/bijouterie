@@ -12,3 +12,13 @@
 @import "blocks/header-panel";
 @import "blocks/header-page";
 @import "blocks/main-nav";
+
+.content {
+    padding-top: 20px;
+}
+
+.home-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
