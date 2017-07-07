@@ -15,10 +15,12 @@
 
 .content {
     padding-top: 20px;
+    padding-bottom: 20px;
+    @include font-size(17px);
 }
 
 .home-title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 28px;
     text-transform: uppercase;
 }

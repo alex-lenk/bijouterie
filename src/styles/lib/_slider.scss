@@ -5,8 +5,9 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
-    background-color: #444;
+    margin: 0 auto 40px;
+    background-color: #fff;
+    border-radius: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -40,7 +41,6 @@
     display: block;
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
 }
 
 .slider__switch span {
