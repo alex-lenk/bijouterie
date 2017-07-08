@@ -8,7 +8,7 @@
     cursor: pointer;
     line-height: 1;
     display: inline-block;
-    @include transition(all, ease);
+    transition: color 0.3s ease;
     
     &-light {
         width: 100%;
@@ -63,5 +63,17 @@
             }
         }
     }
-    
+    &-pink {
+        width: 90px;
+        height: 36px;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 4px;
+        font-weight: bold;
+        background-color: $pink;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+        &:hover, &:active, &:focus {
+            box-shadow: none;
+        }
+    }
 }

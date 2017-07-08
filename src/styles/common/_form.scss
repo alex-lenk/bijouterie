@@ -60,6 +60,13 @@ select {
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     background: #fff;
+    .icon-arrow {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        right: -25px;
+        top: 14px;
+    }
 }
 
 .select-custom-decor {
@@ -73,4 +80,13 @@ select {
     font-size: 14px;
     line-height: 34px;
     overflow: hidden;
+    &::after {
+        width: 1px;
+        height: 100%;
+        top:0;
+        right: 25px;
+        position: absolute;
+        background-color: #e5e5e5;
+        content: '';
+    }
 }
