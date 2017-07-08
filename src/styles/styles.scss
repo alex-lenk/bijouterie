@@ -8,10 +8,12 @@
 @import "common/common";
 @import "common/btn";
 @import "common/form";
+@import "common/checkbox-radio";
 /* blocks */
 @import "blocks/header-panel";
 @import "blocks/header-page";
 @import "blocks/main-nav";
+@import "blocks/sidebar";
 
 .content {
     padding-top: 20px;
@@ -23,4 +25,48 @@
     margin-bottom: 10px;
     font-size: 28px;
     text-transform: uppercase;
+}
+
+.product-sort {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.filter-total {
+    margin-right: auto;
+}
+
+.sort-by {
+    margin-right: 100px;
+    .sort {
+        margin-left: 15px;
+        color: #333;
+    }
+}
+
+.show-by {
+    display: inline-flex;
+    align-items: baseline;
+    .select-custom {
+        width: 70px;
+        margin-left: 15px;
+    }
+    .icon-arrow {
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        right: -25px;
+        top: 14px;
+    }
+}
+
+.select-custom-decor::after {
+    width: 1px;
+    height: 100%;
+    top:0;
+    right: 25px;
+    position: absolute;
+    background-color: #e5e5e5;
+    content: '';
 }

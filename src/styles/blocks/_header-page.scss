@@ -68,8 +68,8 @@
         border: 1px solid $black;
         padding-left: 20px;
         border-radius: 4px;
-        @include font-size(18px);
         font-weight: normal;
+        @include font-size(18px);
     }
 }
 
@@ -82,8 +82,8 @@
     cursor: pointer;
     background-color: transparent;
     .icon-search {
-        width: 36px;
-        height: 36px;
+        width: 31px;
+        height: 33px;
         transition: stroke 0.3s ease;
         stroke: #333;
     }
