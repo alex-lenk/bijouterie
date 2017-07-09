@@ -21,94 +21,7 @@
 
 <div class="catalog container">
     <div class="row">
-        <aside class="sidebar col-2">
-            <form action="#" method="post" id="mse2_filters">
-                <fieldset id="mse2_ms|price">
-                    <h4 class="filter-title">Цена</h4>
-
-                    <div class="mse2_number_slider"></div>
-
-                    <div class="filter-number-inputs">
-                        <label for="minCost"><span class="filter-slider-text">От</span>
-                            <input type="text" id="minCost" value="50" class="ui-field">
-                        </label>
-                        <label for="maxCost"><span class="filter-slider-text">До</span>
-                            <input type="text" id="maxCost" value="99000" class="ui-field">
-                        </label>
-                    </div>
-                </fieldset>
-
-                <fieldset id="mse2_resource" class="category-list">
-                    <h4 class="filter-title">Категория</h4>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Браслеты</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Колье</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Кольца</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Серьги</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Комплекты</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Подвески</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Кулоны</span>
-                    </label>
-
-                    <label class="label-block">
-                        <input type="checkbox" class="checkbox-custom">
-
-                        <span class="checkbox-custom-view label"><svg class="icon-check">
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>Броши</span>
-                    </label>
-                </fieldset>
-            </form>
-        </aside>
-
-        <div class="product-content col-10">
+        <div class="product-content col-lg-10 col-md-9">
             <div class="product-sort">
                 <div class="filter-total">Всего результатов: <span id="mse2_total">200</span></div>
 
@@ -919,6 +832,96 @@
                 <li class="control"><a href="#">»</a></li>
             </ul>
         </div>
+
+        <aside class="sidebar col-lg-2 col-md-3">
+            <div class="filter-toggle">
+                Открыть фильтр
+            </div>
+            <form action="#" method="post" id="mse2_filters">
+                <fieldset id="mse2_ms|price">
+                    <h4 class="filter-title">Цена</h4>
+
+                    <div class="mse2_number_slider"></div>
+
+                    <div class="filter-number-inputs">
+                        <label for="minCost"><span class="filter-slider-text">От</span>
+                            <input type="text" id="minCost" value="50" class="ui-field">
+                        </label>
+                        <label for="maxCost"><span class="filter-slider-text">До</span>
+                            <input type="text" id="maxCost" value="99000" class="ui-field">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset id="mse2_resource" class="category-list">
+                    <h4 class="filter-title">Категория</h4>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Браслеты</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Колье</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Кольца</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Серьги</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Комплекты</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Подвески</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Кулоны</span>
+                    </label>
+
+                    <label class="label-block">
+                        <input type="checkbox" class="checkbox-custom">
+
+                        <span class="checkbox-custom-view label"><svg class="icon-check">
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>Броши</span>
+                    </label>
+                </fieldset>
+            </form>
+        </aside>
     </div>
 </div>
 
@@ -936,7 +939,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <ul class="footer-links col-3">
+            <ul class="footer-links col-md-3">
                 <li class="footer-link-active"><span>Главная</span></li>
                 <li><a href="#">О магазине</a></li>
                 <li><a href="#">Как купить</a></li>
@@ -946,7 +949,7 @@
                 <li><a href="#">Отзывы</a></li>
             </ul>
 
-            <ul class="footer-links col-3">
+            <ul class="footer-links col-lg-3 col-md-2">
                 <li><a href="#">Браслеты</a></li>
                 <li><a href="#">Колье</a></li>
                 <li><a href="#">Кольца</a></li>
@@ -956,7 +959,7 @@
                 <li><a href="#">Кулоны</a></li>
             </ul>
 
-            <ul class="footer-contacts col-3">
+            <ul class="footer-contacts col-lg-3 col-md-4">
                 <li>
                     <a href="tel+74956460795" class="footer-phone" rel="nofollow">8 (800) 555-08-65</a>
                     <div>Бесплатный звонок по РФ</div>
@@ -967,7 +970,7 @@
                 </li>
             </ul>
 
-            <div class="footer-support col-3">
+            <div class="footer-support col-md-3">
                 <button class="btn btn-pink">Позвоните мне</button>
 
                 <div>Мы в социальных сетях:</div>
