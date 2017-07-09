@@ -6,6 +6,9 @@
     .row {
         height: 40px;
     }
+    .socials li:not(:first-child):not(:last-child) {
+        margin: 0 10px;
+    }
 }
 
 .socials {
@@ -17,9 +20,6 @@
     svg {
         fill: #fff;
         transition: all 1.3s ease;
-    }
-    li:not(:last-child) {
-        margin-right: 10px;
     }
     a:hover svg {
         fill: $black;
