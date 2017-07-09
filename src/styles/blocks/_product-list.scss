@@ -50,6 +50,9 @@
     border-radius: 4px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    .btn-pink {
+        min-width: 90px;
+    }
     &:hover {
         box-shadow: 0 0 14px 0.75px rgba(0, 0, 0, 0.2);
         .product-view {
