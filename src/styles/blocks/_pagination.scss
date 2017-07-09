@@ -1,0 +1,38 @@
+.pagination {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    @include font-size(18px);
+    li:not(:first-child):not(:last-child) {
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+    }
+    .disabled {
+        padding: 9px 12px 5px;
+        color: #dddddd;
+        cursor: not-allowed;
+    }
+    .active-text {
+        padding: 9px 12px 5px;
+        display: inline-block;
+        cursor: default;
+        position: relative;
+        color: #fff;
+        background-color: $pink;
+        outline: 1px solid $pink;
+    }
+    a {
+        padding: 9px 12px 5px;
+        display: inline-block;
+        color: $black;
+        outline: 1px solid transparent;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $pink;
+            background-color: $black;
+            outline-color: $black;
+        }
+    }
+}

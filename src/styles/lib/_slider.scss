@@ -109,13 +109,12 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    
     width: 100%;
     height: 50px;
     margin: 0;
     padding: 0;
     text-align: center;
-    z-index: 99999;
+    z-index: 10;
     filter: alpha(opacity=90); /* ie8 */
 }
 
