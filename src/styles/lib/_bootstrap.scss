@@ -1416,7 +1416,7 @@
 }
 
 .modal-header {
-    padding: 15px;
+    padding: 0 15px 15px;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1426,6 +1426,7 @@
 
 .modal-title {
     margin: 0;
+    padding: 0;
     line-height: 1.42857143;
 }
 
@@ -1435,7 +1436,7 @@
 }
 
 .modal-footer {
-    padding: 15px;
+    padding: 15px 15px 0;
     text-align: right;
     border-top: 1px solid #e5e5e5;
 }
