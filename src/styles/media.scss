@@ -93,12 +93,6 @@
     }
 }
 
-@include to('m') {
-    .phone-num {
-        font-weight: bold;
-    }
-}
-
 @include at('m') {
     .basket-info {
         flex-direction: column;
@@ -113,9 +107,17 @@
     .icon-call {
         display: none;
     }
-    
+}
+
+@include between('s', 'm') {
     .product-item {
         flex-basis: calc(100% / 2 - 15px);
+    }
+}
+
+@include to('m') {
+    .phone-num {
+        font-weight: bold;
     }
 }
 
@@ -213,7 +215,7 @@
     }
     .menu-visible {
         .menu {
-            transform: none;
+            transform: translateX(0);
         }
     }
     
@@ -233,15 +235,16 @@
         position: absolute;
         background-color: #fff;
         left: 0;
-        top: 0;
+        top: 50px;
         padding: 15px;
-        transform: translateX(-101%);
+        transform: translateX(-121%);
         will-change: transform;
         transition: all 330ms ease-out;
+        box-shadow: 0 1px 10px rgba(17, 17, 17, 0.35);
     }
     
     .open-filter {
-        transform: none;
+        transform: translateX(0);
     }
     
     footer .row {
@@ -256,6 +259,15 @@
     }
     .copyright {
         flex-wrap: wrap;
+    }
+    
+    .footer-contacts {
+        display: flex;
+        flex-wrap: wrap;
+        li:first-child {
+            padding-right: 30px;
+            margin-right: auto;
+        }
     }
 }
 

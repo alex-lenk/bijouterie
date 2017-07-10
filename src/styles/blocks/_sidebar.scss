@@ -77,3 +77,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.filter-toggle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    span {
+        margin: auto;
+    }
+}
+
+#mse2_filters.open-filter {
+    transform: none;
+}
