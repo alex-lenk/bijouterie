@@ -7,3 +7,5 @@
 //= lib/smoothscroll.js
 
 //= lib/svgxuse.min.js
+
+//= lib/jquery.zoom.min.js

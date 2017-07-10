@@ -16,6 +16,10 @@ $(document).ready(function () {
         }
     );
 
+    $('.img-zoom').zoom({
+        magnify: 0.5
+    });
+
 
 //= init/fixednav.js
 
