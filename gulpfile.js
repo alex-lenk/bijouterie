@@ -96,9 +96,7 @@ gulp.task('html:build', function () {
 gulp.task('js:build', function () {
     gulp.src(way.src.js)
         .pipe(rigger())
-        .pipe(sourcemaps.init())
         .pipe(uglify())
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(way.build.js))
         .pipe(reload({
             stream: true
@@ -107,7 +105,6 @@ gulp.task('js:build', function () {
 
 gulp.task('styles:build', function () {
     gulp.src(way.src.styles)
-        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['src/styles/'],
             outputStyle: 'compressed',
@@ -116,7 +113,6 @@ gulp.task('styles:build', function () {
         }))
         .pipe(prefixer())
         .pipe(cssmin())
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(way.build.css))
         .pipe(reload({
             stream: true
