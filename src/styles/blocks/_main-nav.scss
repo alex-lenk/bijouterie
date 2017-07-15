@@ -33,6 +33,18 @@
 
 .main-nav__toggle {
     display: none;
+    position: relative;
+    &::after {
+        width: 20px;
+        height: 2px;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        box-shadow: 0 7px 0 #fff, 0 -7px 0 #fff;
+    }
 }
 
 .menu {

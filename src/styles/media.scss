@@ -21,6 +21,48 @@
         position: fixed;
         top: 60px;
     }
+    .filter-toggle {
+        display: none;
+    }
+}
+
+@include from('l') {
+    .phone-num {
+        @include font-size(21px);
+    }
+    .phone-hint {
+        width: 170px;
+        height: 60px;
+        border-radius: 170px/60px;
+        color: #ff7cb0;
+        background-color: #111;
+        text-align: center;
+        position: absolute;
+        top: -76px;
+        left: 0;
+        padding-top: 13px;
+        line-height: 1.4;
+        &::after {
+            width: 42px;
+            height: 14px;
+            bottom: -13px;
+            left: 28%;
+            position: absolute;
+            background: url(../img/phone-hint.png) no-repeat center;
+            content: '';
+        }
+    }
+    .basket-info {
+        align-items: center;
+    }
+    .basket-total {
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+    
+    .sort-by {
+        margin-right: 100px;
+    }
 }
 
 @include from('xl') {
@@ -58,41 +100,6 @@
     }
 }
 
-@include from('l') {
-    .phone-num {
-        @include font-size(21px);
-    }
-    .phone-hint {
-        width: 170px;
-        height: 60px;
-        border-radius: 170px/60px;
-        color: #ff7cb0;
-        background-color: #111;
-        text-align: center;
-        position: absolute;
-        top: -76px;
-        left: 0;
-        padding-top: 13px;
-        line-height: 1.4;
-        &::after {
-            width: 42px;
-            height: 14px;
-            bottom: -13px;
-            left: 28%;
-            position: absolute;
-            background: url(../img/phone-hint.png) no-repeat center;
-            content: '';
-        }
-    }
-    .basket-info {
-        align-items: center;
-    }
-    .basket-total {
-        margin-left: auto;
-        justify-content: flex-end;
-    }
-}
-
 @include at('m') {
     .basket-info {
         flex-direction: column;
@@ -109,6 +116,12 @@
     }
 }
 
+@include at('s') {
+    .footer-support .btn-pink {
+        width: 50%;
+    }
+}
+
 @include between('s', 'm') {
     .product-item {
         flex-basis: calc(100% / 2 - 15px);
@@ -118,6 +131,12 @@
 @include to('m') {
     .phone-num {
         font-weight: bold;
+    }
+    .filter-total {
+        display: none;
+    }
+    .sort-by {
+        margin-right: auto;
     }
 }
 
