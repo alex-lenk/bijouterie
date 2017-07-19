@@ -7,12 +7,18 @@ html {
 
 html,
 body {
+    height: 100%;
     background: #ffffff;
     color: #333333;
     font-family: 'PT Sans', -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-weight: normal;
     line-height: 1.4;
     @include font-size(16px);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 a, .as-link {
