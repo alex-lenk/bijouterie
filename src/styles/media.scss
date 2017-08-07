@@ -3,17 +3,23 @@
 @import "common/variables";
 @import "common/mixin";
 
-@include from('m') {
-    .header-panel {
-        .basket-info {
-            display: none;
-        }
+@include from('s') {
+    .slick-slider {
+        height: 468px;
     }
+    .slider__item {
+        max-width: 1170px;
+        width: 100%;
+        height: 468px;
+    }
+}
+
+@include from('m') {
     .logo {
         height: 40px;
     }
     
-    .catalog .row {
+    .catalog .catalog-row {
         flex-direction: row-reverse;
     }
     
@@ -52,7 +58,7 @@
             content: '';
         }
     }
-    .basket-info {
+    .basket-link {
         align-items: center;
     }
     .basket-total {
@@ -101,7 +107,7 @@
 }
 
 @include at('m') {
-    .basket-info {
+    .basket-link {
         flex-direction: column;
     }
     .header-info .btn-light {
@@ -119,6 +125,20 @@
 @include at('s') {
     .footer-support .btn-pink {
         width: 50%;
+    }
+    
+    .slick-slider {
+        height: 320px;
+    }
+    .slider-container {
+        width: 320px;
+        height: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .slider__item {
+        width: 320px;
+        height: 320px;
     }
 }
 
@@ -155,7 +175,7 @@
             overflow: hidden;
             align-items: center;
         }
-        .free-shipping, .socials {
+        .free-shipping {
             display: none;
         }
         .btn-light {
@@ -187,7 +207,7 @@
         }
     }
     
-    .basket-info {
+    .basket-link {
         color: #fff;
         align-items: center;
     }
@@ -238,7 +258,7 @@
         }
     }
     
-    .catalog .row {
+    .catalog .catalog-row {
         flex-direction: column-reverse;
     }
     
@@ -288,13 +308,48 @@
             margin-right: auto;
         }
     }
+    
+    .header-center {
+        margin-bottom: 20px;
+    }
 }
 
 @include to('xs') {
     .copyright {
-        flex-direction: column;
+        .container {
+            flex-direction: column;
+        }
         .counters {
             margin-top: 20px;
+            margin-left: 0;
         }
+    }
+    
+    .slick-slider {
+        height: 290px;
+    }
+    .slider-container {
+        width: 290px;
+        height: 290px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .slider__item {
+        width: 290px;
+        height: 290px;
+    }
+    .product-item {
+        width: 100%;
+        padding: 15px 10px 15px;
+    }
+    .product-item-media {
+        text-align: center;
+        border-color: transparent;
+    }
+    .product-item-bottom {
+        justify-content: center;
+    }
+    .product-item-price {
+        margin-left: 20px;
     }
 }

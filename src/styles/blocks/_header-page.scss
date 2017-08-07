@@ -1,5 +1,8 @@
 .header-page .btn-light {
     margin-bottom: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
 }
 
 .logo {
@@ -68,13 +71,21 @@
     margin-left: auto;
 }
 
-.basket-info {
+.basket-link {
     display: flex;
+    outline: 1px solid rgba(#ff7cb0, 0);
+    outline-offset: 5px;
+    transition: all .3s ease;
+    &:hover {
+        outline-color: rgba(#ff7cb0, 1);
+    }
 }
 
 .basket {
+    color: #333;
     display: inline-flex;
     align-items: center;
+    @include font-size(16px);
     .icon-basket {
         width: 36px;
         height: 36px;
@@ -82,9 +93,19 @@
     }
 }
 
+.not_empty {
+    width: 100%;
+    overflow: hidden;
+}
+
 .basket-total {
+    float: right;
+    margin-top: 10px;
+    
+    color: #333;
     display: inline-flex;
     align-items: baseline;
+    @include font-size(16px);
     .icon-rub {
         width: 14px;
         height: 14px;

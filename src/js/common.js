@@ -1,7 +1,9 @@
 $(document).ready(function () {
-    $('.slider-container').ikSlider({
-        speed: 500,
-        autoPlay: !1
+
+    $('.slider-container').slick({
+        prevArrow: '<div data-role="none" class="slick-prev" aria-label="Previous" tabindex="0"><span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.89 17.418c.27.272.27.71 0 .98s-.7.27-.968 0l-7.83-7.91c-.268-.27-.268-.706 0-.978l7.83-7.908c.268-.27.7-.27.97 0s.267.71 0 .98L6.75 10l7.14 7.418z"/></svg></span></div>',
+        nextArrow: '<div data-role="none" class="slick-next" aria-label="Next" tabindex="0"><span><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path d="M13.25 10L6.11 2.58c-.27-.27-.27-.707 0-.98.267-.27.7-.27.968 0l7.83 7.91c.268.27.268.708 0 .978l-7.83 7.908c-.268.27-.7.27-.97 0s-.267-.707 0-.98L13.25 10z"/></svg></span></div>',
+        dots: true
     });
 
     $(".main-nav").click(
@@ -22,10 +24,6 @@ $(document).ready(function () {
 
 
 //= init/fixednav.js
-
-
-//= init/jquery-ui-slider.js
-
 
 //= init/selectCustom.js
 });

@@ -1,7 +1,6 @@
 @import "../common/variables";
 
 .pagination {
-    height: 32px;
     border: 1px solid #dddddd;
     border-radius: 4px;
     line-height: 1;
@@ -9,7 +8,7 @@
     overflow: hidden;
     @include font-size(18px);
     li {
-        height: inherit;
+        height: 32px;
         border-right: 1px solid #dddddd;
         &:last-child {
             border-right-width: 0;

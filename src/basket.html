@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+
+    <link rel="stylesheet" href="http://1-fashion.ru/assets/components/minishop2/css/web/default.css" type="text/css">
+    <link rel="stylesheet" href="http://1-fashion.ru/assets/components/minishop2/css/web/default.css" type="text/css" />
+
+    <link rel="stylesheet" href="http://1-fashion.ru/assets/components/msearch2/css/web/default.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://1-fashion.ru/assets/components/ajaxform/css/default.css" type="text/css" />
+    //= template/head.html
+
+    <style>
+        .prod-price {
+            font-size: 24px;
+            color: #888888;
+        }
+        .ui-inline {
+            display: flex;
+            align-items: baseline;
+        }
+        .ui-inline .ui-field {
+            max-width: 80px;
+            margin: 0 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+<header class="header-page">
+    <div class="header-panel">
+        <div class="container">
+            <div class="row">
+                <ul class="col socials hidden-xs">
+                    <li><a href="https://vk.com/1fashionjewel" rel="nofollow" target="_blank">
+                        <svg class="icon-vk">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/Brandizru-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%B1%D0%B8%D0%B6%D1%83%D1%82%D0%B5%D1%80%D0%B8%D0%B8-116927665430243/" rel="nofollow" target="_blank">
+                        <svg class="icon-fb">
+                            <use xlink:href="img/sprite.svg#fb"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/brandiz_ru/" rel="nofollow" target="_blank">
+                        <svg class="icon-ig">
+                            <use xlink:href="img/sprite.svg#ig"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+
+                <div class="col free-shipping hidden-xs">
+                    <svg class="icon-delivery">
+                        <use xlink:href="img/sprite.svg#delivery"></use>
+                    </svg>
+
+                    Бесплатная доставка по всей России
+                </div>
+
+                <div class="basket-info">
+                    <div class="basket">
+                        <svg class="icon-basket">
+                            <use xlink:href="img/sprite.svg#basket"></use>
+                        </svg>
+                        Корзина: 10
+                    </div>
+
+                    <div class="basket-total">
+                        Итого: 91759
+                        <svg class="icon-rub">
+                            <use xlink:href="img/sprite.svg#rub"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <button class="btn btn-light visible-xs" data-toggle="modal" data-target="#requestCall">
+                    <svg class="icon-call">
+                        <use xlink:href="img/sprite.svg#call"></use>
+                    </svg>
+                    <span>Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-content container">
+        <div class="row">
+            <div class="logo col-md-4">
+
+                <a href="http://1-fashion.ru/"><picture>
+                    <source srcset="img/logo@2x.png"
+                            media="(-webkit-min-device-pixel-ratio: 1.3), (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 4/3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.33dppx)">
+                    <img src="img/logo.png" alt="1-fashion.ru">
+                </picture></a>
+
+            </div>
+
+            <div class="header-center col-lg-4 col-md-5">
+                <ul class="phones">
+                    <li>
+                        <a href="tel:+74956460795" class="phone-num" rel="nofollow">8 (495) 646-07-95</a>
+                        <span class="phone-hint">Будни с 10:00 до <br> 19:00 по МСК</span>
+                    </li>
+                    <li>
+                        <a href="tel:+78005550865" class="phone-num" rel="nofollow">8 (800) 555-08-65</a>
+                        <span class="phone-hint">Бесплатные звонки <br> по России</span>
+                    </li>
+                </ul>
+
+                <form action="#" class="header-search">
+                    <input type="text" class="ui-field hide-placeholder" placeholder="Поиск товара">
+
+                    <button class="header-search-button">
+                        <svg class="icon-search">
+                            <use xlink:href="img/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="header-info col-md-3 hidden-xs">
+                <button class="btn btn-light" data-toggle="modal" data-target="#requestCall">
+                    <svg class="icon-call">
+                        <use xlink:href="img/sprite.svg#call"></use>
+                    </svg>
+                    <span>Заказать звонок</span>
+                </button>
+
+                <div id="msMiniCart" class="basket-info full">
+                    <a href="korzina.html" class="basket-link">
+        <span class="basket">
+            <span>
+                <svg class="icon-basket">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+            </span>
+            <span>Корзина: &nbsp;</span>
+            <span class="ms2_total_count not_empty">3</span>
+            <span class="not_empty">шт.</span>
+        </span>
+
+                        <span class="basket-total">
+            <span class="empty">пусто</span>
+
+            <span class="not_empty">
+                Итого: 10 800                <svg class="icon-rub">
+                    <use xlink:href="img/sprite.svg#rub"></use>
+                </svg>
+            </span>
+        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="main-nav-wrap">
+    <div class="main-nav">
+        <div class="container">
+            <div class="main-nav__toggle"><span class="navbar-toggle-text">Меню сайта</span></div>
+            <ul class="menu list-unstyled"><li><a href="/" >Главная</a></li><li><a href="o-magazine/" >О магазине</a></li><li><a href="kak-kupit/" >Как купить</a></li><li><a href="dostavka-i-oplata/" >Доставка и оплата</a></li><li><a href="garantiya/" >Гарантия</a></li><li><a href="reviews/" >Отзывы</a></li><li><a href="contacts/" >Контакты</a></li></ul>        </div>
+    </div>
+</nav>
+
+<article class="content container">
+    <h1 class="page-title">Корзина</h1>
+
+
+    <div id="msCart">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr class="header">
+                    <th class="image">&nbsp;</th>
+                    <th class="title">Наименование</th>
+                    <th class="count">Количество</th>
+                    <th class="weight">Вес</th>
+                    <th class="price">Цена</th>
+                    <th class="remove">Удалить</th>
+                </tr>
+
+                <tr id="8c9e1b5827ae9a9a10dbf8059276972a">
+                    <td class="image">
+                        <img src="http://1-fashion.ru/assets/images/products/63/small/a130ccfa9a880315bdeedd237fc4cce7.jpg" alt="подвеска с фианитами" title="подвеска с фианитами"/>
+                    </td>
+                    <td class="title">
+                        <a href="katalog/podveski/podveska-s-fianitami.html">подвеска с фианитами</a>
+                    </td>
+                    <td class="count">
+                        <form method="post" class="ms2_form form-inline" role="form">
+                            <input type="hidden" name="key" value="8c9e1b5827ae9a9a10dbf8059276972a"/>
+                            <div class="form-group">
+                                <input type="number" name="count" value="3"
+                                       class="input-sm form-control"/>
+                                <span class="hidden-xs">шт.</span>
+                                <button class="btn btn-default" type="submit" name="ms2_action" value="cart/change">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </td>
+                    <td class="weight">
+                        <span>0</span> кг.                        </td>
+                    <td class="price">
+                        <span>3 600</span> руб.                                                    </td>
+                    <td class="remove">
+                        <form method="post" class="ms2_form">
+                            <input type="hidden" name="key" value="8c9e1b5827ae9a9a10dbf8059276972a">
+                            <button class="btn btn-default" type="submit" name="ms2_action" value="cart/remove">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr class="footer">
+                    <th class="total" colspan="2">Итого:</th>
+                    <th class="total_count">
+                        <span class="ms2_total_count">3</span>
+                        шт.                    </th>
+                    <th class="total_weight">
+                        <span class="ms2_total_weight">0</span>
+                        кг.                    </th>
+                    <th class="total_cost">
+                        <span class="ms2_total_cost">10 800</span>
+                        руб.                    </th>
+                    <th>&nbsp;</th>
+                </tr>
+            </table>
+        </div>
+        <form method="post">
+            <button class="btn btn-default" type="submit" name="ms2_action" value="cart/clean">
+                <i class="glyphicon glyphicon-remove"></i> Очистить корзину            </button>
+        </form>
+    </div>
+
+    <form class="form-horizontal ms2_form" id="msOrder" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Данные получателя:</h4>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="email">
+                        <span class="required-star">*</span> Email                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="email" placeholder="Email"
+                               name="email" value=""
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="receiver">
+                        <span class="required-star">*</span> Получатель                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="receiver" placeholder="Получатель"
+                               name="receiver" value=""
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="phone">
+                        <span class="required-star">*</span> Телефон                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="phone" placeholder="Телефон"
+                               name="phone" value=""
+                               class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="comment">
+                        <span class="required-star">*</span> Комментарий</label>
+                    <div class="col-sm-6">
+                    <textarea name="comment" id="comment" placeholder="Комментарий"
+                              class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" id="payments">
+                <h4>Способы оплаты:</h4>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"><span class="required-star">*</span>
+                        Выберите оплату</label>
+                    <div class="col-sm-6">
+                        <div class="checkbox">
+                            <label class="payment input-parent">
+                                <input type="radio" name="payment" value="1" id="payment_1"
+                                       checked>
+                                Оплата наличными                                                                                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="deliveries">
+                <h4>Варианты доставки:</h4>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">
+                        <span class="required-star">*</span> Выберите доставку                </label>
+                    <div class="col-sm-6">
+                        <div class="checkbox">
+                            <label class="delivery input-parent">
+                                <input type="radio" name="delivery" value="1" id="delivery_1"
+                                       data-payments="[1]"
+                                       checked>
+                                Самовывоз                                                                                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label class="delivery input-parent">
+                                <input type="radio" name="delivery" value="2" id="delivery_2"
+                                       data-payments="[1]"
+                                >
+                                Доставка курьером                                                                                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h4>Адрес доставки:</h4>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="index">
+                        <span class="required-star">*</span> Почтовый индекс                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="index" placeholder="Почтовый индекс"
+                               name="index" value=""
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="region">
+                        <span class="required-star">*</span> Область                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="region" placeholder="Область"
+                               name="region" value=""
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="city">
+                        <span class="required-star">*</span> Город                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="city" placeholder="Город"
+                               name="city" value=""
+                               class="form-control">
+                    </div>
+                </div>
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="street">
+                        <span class="required-star">*</span> Улица</label>
+                    <div class="col-md-6 row">
+                        <div class="col-md-4">
+                            <input type="text" id="street" placeholder="Улица"
+                                   name="street" value=""
+                                   class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="building" placeholder="Дом"
+                                   name="building" value=""
+                                   class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="room" placeholder="Комната"
+                                   name="room" value=""
+                                   class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="button" name="ms2_action" value="order/clean" class="btn btn-default ms2_link">
+            <i class="glyphicon glyphicon-remove"></i> Очистить форму    </button>
+
+        <hr/>
+        <div class="well">
+            <div class="col-md-offset-2">
+                <h3>Итого, с доставкой:
+                    <span id="ms2_order_cost">10 800</span>
+                    руб.            </h3>
+                <button type="submit" name="ms2_action" value="order/submit" class="btn btn-default btn-primary ms2_link">
+                    Сделать заказ!            </button>
+            </div>
+        </div>
+    </form>
+
+
+
+
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <ul class="footer-links col-md-3"><li><a href="/" >Главная</a></li><li><a href="o-magazine/" >О магазине</a></li><li><a href="kak-kupit/" >Как купить</a></li><li><a href="dostavka-i-oplata/" >Доставка и оплата</a></li><li><a href="garantiya/" >Гарантия</a></li><li><a href="reviews/" >Отзывы</a></li><li><a href="contacts/" >Контакты</a></li></ul>            <ul class="footer-links col-lg-3 col-md-2">
+            <li><a href="#">Браслеты</a></li>
+            <li><a href="#">Колье</a></li>
+            <li><a href="#">Кольца</a></li>
+            <li><a href="#">Серьги</a></li>
+            <li><a href="#">Комплекты</a></li>
+            <li><a href="#">Подвески</a></li>
+            <li><a href="#">Кулоны</a></li>
+        </ul>
+
+            <ul class="footer-contacts col-lg-3 col-md-4">
+                <li>
+                    <a href=":+78005550865" class="footer-phone" rel="nofollow">8 (800) 555-08-65</a>
+                    <div>Бесплатные звонки <br> по России</div>
+                </li>
+                <li>
+                    <a href=":+74956460795" class="footer-phone" rel="nofollow">8 (495) 646-07-95</a>
+                    <div>Будни с 10:00 до <br> 19:00 по МСК</div>
+                </li>
+            </ul>
+
+            <div class="footer-support col-md-3">
+                <button class="btn btn-pink" data-toggle="modal" data-target="#requestCall">Позвоните мне</button>
+
+                <div>Мы в социальных сетях:</div>
+
+                <ul class="socials">
+                    <li><a href="https://vk.com/1fashionjewel" rel="nofollow" target="_blank">
+                        <svg class="icon-vk">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/Brandizru-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%B1%D0%B8%D0%B6%D1%83%D1%82%D0%B5%D1%80%D0%B8%D0%B8-116927665430243/" rel="nofollow" target="_blank">
+                        <svg class="icon-fb">
+                            <use xlink:href="img/sprite.svg#fb"></use>
+                        </svg>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/brandiz_ru/" rel="nofollow" target="_blank">
+                        <svg class="icon-ig">
+                            <use xlink:href="img/sprite.svg#ig"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div>
+                ©2017 все права защищены www.1-fashion.ru. Информация на сайте не является публичной офертой.
+            </div>
+
+            <div class="counters">
+                <img src="img/example/liveinternet.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal requestCall -->
+<div class="modal fade" id="requestCall" tabindex="-1" role="dialog" aria-labelledby="requestCallLabel">
+    <div class="modal-dialog" role="document">
+        <form method="post" action="korzina.html" class="modal-content ajax_form">
+            <input type="hidden" name="title" value="Корзина">
+            <input type="hidden" name="link" value="&#91;&#91;*uri&#93;&#93;">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="requestCallLabel">Закажите обратный звонок</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" name="name" class="ui-field hide-placeholder" placeholder="Ваше имя" value="" required>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" class="ui-field hide-placeholder" placeholder="Ваш телефон" value="" required>
+                    <span class="error_phone"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-pink">Отправить</button>
+            </div>
+
+
+
+            <input type="hidden" name="af_action" value="1e7c8326342d28a0ab4dcb38cd60f86c" />
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

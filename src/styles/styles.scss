@@ -1,6 +1,5 @@
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
-@import 'lib/bootstrap';
 /* common */
 @import "common/variables";
 @import "common/mixin";
@@ -41,9 +40,106 @@
     color: #ff7cb0;
 }
 
-.ec-message {
+.content .ec-message {
     margin-bottom: 30px;
     background-color: #ffffff;
     border-width: 0;
     box-shadow: 0 0 15px 1px rgba(17, 17, 17, 0.10);
+}
+
+.fm-pos-bottom footer {
+    margin-bottom: 40px;
+}
+
+.modal-title {
+    margin-bottom: 15px;
+    @include font-size(22px);
+}
+
+.slick-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.slider__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 1px;
+    background: #000;
+    opacity: .3;
+    transition: all .3s ease;
+    fill: #fff;
+    z-index: 90;
+    span {
+        color: #fff;
+        display: block;
+        width: 32px;
+        height: 32px;
+    }
+    
+    &:hover {
+        opacity: .85;
+    }
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-dots {
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 10;
+    li {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        margin: 0 7px;
+        transition: all .5s ease;
+        border: 1px solid #111;
+        border-radius: 50%;
+        background: #ff7cb0;
+        box-shadow: 0 0 5px rgba(255, 124, 176, 0.35);
+    }
+    button {
+        text-indent: -9999px;
+        background: transparent;
+        border: 0;
+    }
+}
+
+li.slick-active {
+    width: 12px;
+    height: 12px;
+    background: #fff;
 }
