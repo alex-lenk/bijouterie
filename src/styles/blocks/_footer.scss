@@ -1,6 +1,8 @@
 footer {
     margin-top: auto;
     background-color: $black;
+    position: relative;
+    z-index: 5;
     .row {
         padding-top: 25px;
         padding-bottom: 20px;
