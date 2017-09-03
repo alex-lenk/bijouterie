@@ -145,3 +145,38 @@ li.slick-active {
     height: 12px;
     background: #fff;
 }
+
+.panel-body label {
+    display: block;
+}
+
+.panel-group {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.panel-heading {
+    padding: 4px 15px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ff7cb0;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+    &::before {
+        right: 5px;
+        border: 5px solid transparent;
+        position: absolute;
+        content: '';
+    }
+    &:not(.collapsed)::before {
+        border-bottom-color: #ff7cb0;
+        top: 8px;
+    }
+}
+
+.collapsed::before {
+    border-top-color: #ff7cb0;
+    top: 14px;
+}
