@@ -7,3 +7,5 @@
 //= lib/svgxuse.min.js
 
 //= lib/jquery.zoom.min.js
+
+//= lib/jquery-ui.min.js

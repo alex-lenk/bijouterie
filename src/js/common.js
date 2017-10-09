@@ -21,6 +21,9 @@ $(document).ready(function () {
 
 //= init/selectCustom.js
 
+//= init/jquery-ui-slider.js
+
+
     $('.panel-group li:first-child .panel-collapse').addClass('in');
 
     $('.panel-group li:first-of-type .panel-heading').removeClass('collapsed');
