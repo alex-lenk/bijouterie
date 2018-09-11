@@ -97,7 +97,7 @@
         width: 32px;
         height: 32px;
     }
-    
+
     &:hover {
         opacity: .85;
     }
@@ -179,4 +179,8 @@ li.slick-active {
 .collapsed::before {
     border-top-color: #ff7cb0;
     top: 14px;
+}
+
+#requestCall .modal-dialog {
+    max-width: 375px;
 }
